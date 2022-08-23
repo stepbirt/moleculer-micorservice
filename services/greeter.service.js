@@ -35,8 +35,7 @@ module.exports = {
 				path: "/hello"
 			},
 			async handler(ctx) {
-				let result = await this.increaseNumber(2, 7);
-				return `Hello Moleculer  total => ${result}`;
+				return `Hello Moleculer`;
 			}
 		},
 
@@ -69,11 +68,7 @@ module.exports = {
 	 * Methods
 	 */
 	methods: {
-		increaseNumber(numberA, numberB){
-			return new Promise((resolve, reject) => {
-				resolve(numberA+numberB);
-			});
-		}
+		
 	},
 
 	/**
